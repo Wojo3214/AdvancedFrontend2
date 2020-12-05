@@ -27,3 +27,5 @@ function pageChange() {
 }
 
 pageChange();
+
+//Now should work

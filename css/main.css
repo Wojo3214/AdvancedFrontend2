@@ -40,7 +40,7 @@ html {
 .home-page {
     height: 100vh;
     width: 100%;
-    background-image: url("../img/bg-img.jpg");
+    background-image: url("../media/bg-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -55,6 +55,11 @@ html {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    z-index: 99999999;
+}
+
+.active-nav-icon{
+    transform: rotate(-45deg);
 }
 
 .nav-btn div {
@@ -80,6 +85,7 @@ html {
     top: 0px;
     display: block;
     z-index: 999999;
+    transition: 0.2s ease-out;
 }
 
 .close-btn {

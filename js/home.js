@@ -5,7 +5,7 @@ function appendHomePage(){
                 <h1>KuNSTE</h1>
                 <h2>Art museum</h2>
             </header>
-            <div class="nav-btn">
+            <div class="nav-btn" onclick="openCloseNav()">
                 <div></div>
                 <div></div>
             </div>
@@ -18,5 +18,17 @@ function appendHomePage(){
 appendHomePage();
 
 function openCloseNav(){
-    let navBtn = document.querySelector(".nav-btn");
+    let navContainer = document.querySelector(".nav-container");
+    if(navContainer.style.right = "-3000px"){
+        navContainer.style.right = "0px";
+        console.log("Open nav");
+    }   else if (navContainer.style.right = "0px"){
+        navContainer.style.right = "-3000px";
+        console.log("Close nav");
+    }
+    
+    
+
 }
+
+//document.querySelector(".nav-btn").addEventListener("click", openCloseNav);

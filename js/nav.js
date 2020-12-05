@@ -1,7 +1,6 @@
 
-
 function appendNav(){
-    document.querySelector("#app").innerHTML += /*html*/`
+    let navTemplate = /*html*/`
     <div class="nav-container">
         <nav class="navigation">
             <ul>
@@ -20,6 +19,8 @@ function appendNav(){
         </nav>
     </div>
     `;
+    document.querySelector("#app").innerHTML = navTemplate;
+    console.log("nav");
 }
 
 appendNav();
